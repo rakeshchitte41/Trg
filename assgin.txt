@@ -1,0 +1,28 @@
+Django-To connect html and python
+python-linear regression
+mysql-data creation 
+html-admin login page,user page
+
+
+Modules:-
+
+1)Admin:
+Add location
+view location 
+Add density
+2)User:-
+view location
+view prediction price
+
+Module Assign:-
+ADMIN
+1)Admin html page - sudha
+houseprice data-sudha
+
+2)sql database(location,user details,density)-prashanth
+admin login page
+
+USER
+1)python script for linear regression-jyothsna
+2)user html page-rakesh
+3)connections between the pages-jyothsna,rakesh
