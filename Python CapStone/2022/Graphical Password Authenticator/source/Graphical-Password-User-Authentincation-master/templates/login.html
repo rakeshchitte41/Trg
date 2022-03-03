@@ -1,11 +1,4 @@
-{% extends 'base.html' %}
-
-{% block title %}
-Login Page
-{% endblock %}
-
-
-{% block content %}
+{% extends 'base.html' %} {% block title %} Login Page {% endblock %} {% block content %}
 <div class="mx-auto" style="width: 400px; padding: 32px 0px">
     <div class="content-section">
         <form class="" action="" method="post" id="post-form">
@@ -19,8 +12,7 @@ Login Page
                 <input type="text" class="form-control" id="username">
             </div>
 
-            <br>
-            {% include 'pwd.html' %}
+            <br> {% include 'pwd.html' %}
 
             <br>
 
@@ -28,11 +20,7 @@ Login Page
                 <button type="submit" class="btn btn-outline-info">Sign In</button>
             </div>
         </form>
-        <div class="border-top pt-3">
-            <small class="text-muted">
-                Forgot password? <a href="{% url 'reset' %}" class="ml-2">Click here</a>
-            </small>
-        </div>
+
         <div class="border-top pt-3">
             <small class="text-muted">
                 Don't have an account? <a href="{% url 'register' %}" class="ml-2">Sign Up</a>
@@ -82,7 +70,7 @@ Login Page
 
     // Submit post on submit
     var form = document.getElementById('post-form');
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', function(event) {
         event.preventDefault();
         console.log("form submitted!");
         post('', {
