@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@+w4_43_p5rri_@l3!2yd$@qq+1iwg5t(3+e2whvp-qgp2+4d9'
+SECRET_KEY = 'django-insecure-p&$&supx595jkf60vtenf&ic3l@qtowrqwvxr57!sd$$euzdl^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,12 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders'
+    'rest_framework',
+    'FirstComponent.apps.FirstcomponentConfig'
 ]
-CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -50,7 +49,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    
+    
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+
 
 ROOT_URLCONF = 'DjangoAPI.urls'
 
@@ -78,8 +85,12 @@ WSGI_APPLICATION = 'DjangoAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'BloodDaonation',
+        'HOST': '127.0.0.1',
+        'PORT':  '3306',
+        'USER': 'root',
+        'PASSWORD': 'Jayaharisai@123',
     }
 }
 
