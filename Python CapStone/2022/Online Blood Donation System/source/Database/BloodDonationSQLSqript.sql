@@ -1,3 +1,10 @@
+CREATE DATABASE BloodDaonation;
+CREATE TABLE blooddaonation.admins_authentication (
+			Id int,
+            username varchar(50) not null,
+            password varchar(50) not null,
+            primary key(username)
+            
 );
 CREATE TABLE blooddaonation.Hospitals(
 			Id int ,
