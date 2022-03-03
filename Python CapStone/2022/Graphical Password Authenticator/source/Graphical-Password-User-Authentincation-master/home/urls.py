@@ -5,6 +5,8 @@ from .views import (
     login_page, 
     logout_page, 
     login_from_uid, 
+    reset_view, 
+    reset_from_uid,
     )
 
 urlpatterns = [
@@ -13,4 +15,6 @@ urlpatterns = [
     path('login/', login_page, name='login'),
     path('login/<str:uid>', login_from_uid, name='login_uid'),
     path('logout/', logout_page, name='logout'),
+    path('reset/', reset_view, name='reset'),
+    path('reset/<str:uid>', reset_from_uid, name='reset_uid'),
 ]
