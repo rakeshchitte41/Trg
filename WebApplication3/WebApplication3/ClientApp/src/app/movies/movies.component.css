@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px 35px;
+  text-align: center;
+}
+
+.toprow td {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.input {
+  padding: 7px 32px;
+}
