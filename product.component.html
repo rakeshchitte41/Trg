@@ -1,0 +1,35 @@
+<h1><font color = "blue">ShoppingCart</font></h1>
+<h1 > <font color ="green">categories</font></h1>
+
+<table border="1">
+    <tr>
+        <th [style.display]="elec()">Electronics</th>
+        <th [style.display]="fash()">Fashions</th>
+        <th [style.display]="acces()">Accessories</th>
+        <th [style.display]="foot()">Footwear</th>
+    </tr>
+    <tr *ngFor="let rows of data">
+        <td [style.display]="elec()">{{rows.Electronics}}</td>
+        <td [style.display]="fash()">{{rows.Fashions}}</td>
+        <td [style.display]="acces()">{{rows.Accessories}}</td>
+        <td [style.display]="foot()">{{rows.Footwear}}</td>
+        
+    </tr>
+   
+</table>
+<br><br>ElectronicsAppliances<input type="checkbox" (change)="electronics()" unchecked="electronics"/>
+Fashions<input type="checkbox" (change)="fashions()" unchecked="fashions"/>
+Accessories<input type="checkbox" (change)="accessories()" unchecked="accessories"/>
+Footwear<input type="checkbox" (change)="footwear()" unchecked="footwear"/>
+<!---
+<label>choose the category</label>
+<select (change)="electronics()" (change)="fashions()" (change)="accessories()" (change)="footwear()">
+    <option value="" ><button (onclick)="electronics()">Electronics</button></option>
+    <option (oncl="electronics()">Electronics</option>
+    <option value="fashions()">Fashions</option>
+    <option value="accessories()">Accessories</option>
+    <option value="footwear()">Footwear</option>
+
+</select>-->
+
+
